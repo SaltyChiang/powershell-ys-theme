@@ -45,13 +45,15 @@ function prompt {
 }
 
 # Basic editing functions
+Set-PSReadLineKeyHandler -Chord Ctrl+Alt+Backspace -Function BackwardKillWord
+Set-PSReadLineKeyHandler -Chord Ctrl+u -Function BackwardDeleteLine
 Set-PSReadLineKeyHandler -Chord Alt+Backspace -Function BackwardDeleteLine
 Set-PSReadlineKeyHandler -Chord Ctrl+d -Function DeleteCharOrExit
 Set-PSReadLineKeyHandler -Chord Escape -Function Copy
 
 # Cursor movement functions
-# Set-PSReadLineKeyHandler -Chord Alt+LeftArrow -Function BeginningOfLine
-# Set-PSReadLineKeyHandler -Chord Alt+RightArrow -Function EndOfLine
+Set-PSReadLineKeyHandler -Chord Alt+LeftArrow -Function BeginningOfLine
+Set-PSReadLineKeyHandler -Chord Alt+RightArrow -Function EndOfLine
 # Set-PSReadlineKeyHandler -Chord Ctrl+a -Function BeginningOfLine
 # Set-PSReadlineKeyHandler -Chord Ctrl+e -Function EndOfLine
 Set-PSReadLineKeyHandler -Chord Alt+b -Function BackwardWord
