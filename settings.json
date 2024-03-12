@@ -1,0 +1,164 @@
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": 
+    [
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u0017"
+            },
+            "keys": "ctrl+backspace"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "right",
+                "splitMode": "duplicate"
+            },
+            "keys": "alt+d"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "right",
+                "splitMode": "duplicate"
+            },
+            "keys": "alt+shift+plus"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u0015"
+            },
+            "keys": "alt+backspace"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+f"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "down",
+                "splitMode": "duplicate"
+            },
+            "keys": "alt+shift+d"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "down",
+                "splitMode": "duplicate"
+            },
+            "keys": "alt+shift+minus"
+        }
+    ],
+    "copyFormatting": "none",
+    "copyOnSelect": true,
+    "defaultProfile": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
+    "experimental.rendering.software": false,
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
+    "profiles": 
+    {
+        "defaults": 
+        {
+            "adjustIndistinguishableColors": "indexed",
+            "colorScheme": "Terminal.app",
+            "cursorShape": "filledBox",
+            "font": 
+            {
+                "face": "Consolas"
+            },
+            "intenseTextStyle": "all",
+            "opacity": 75,
+            "useAcrylic": true,
+            "useAtlasEngine": true
+        },
+        "list": 
+        [
+            {
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell"
+            },
+            {
+                "commandline": "%SystemRoot%\\System32\\cmd.exe",
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "name": "\u547d\u4ee4\u63d0\u793a\u7b26"
+            },
+            {
+                "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
+                "hidden": false,
+                "name": "Debian",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": true,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            },
+            {
+                "guid": "{ffaa985a-d9bf-57f7-9faa-d5f6b3bab07e}",
+                "hidden": true,
+                "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{d8efee03-c79a-570d-889a-f37db2e83a22}",
+                "hidden": true,
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
+                "hidden": false,
+                "name": "Git Bash",
+                "source": "Git"
+            }
+        ]
+    },
+    "schemes": 
+    [
+        {
+            "background": "#FFFFFF",
+            "black": "#000000",
+            "blue": "#0000B2",
+            "brightBlack": "#666666",
+            "brightBlue": "#0000FF",
+            "brightCyan": "#00E5E5",
+            "brightGreen": "#00D900",
+            "brightPurple": "#E500E5",
+            "brightRed": "#E50000",
+            "brightWhite": "#E5E5E5",
+            "brightYellow": "#E5E500",
+            "cursorColor": "#7F7F7F",
+            "cyan": "#00A6B2",
+            "foreground": "#000000",
+            "green": "#00A600",
+            "name": "Terminal.app",
+            "purple": "#B200B2",
+            "red": "#990000",
+            "selectionBackground": "#A5CDFF",
+            "white": "#BFBFBF",
+            "yellow": "#999900"
+        }
+    ],
+    "theme": "system",
+    "themes": [],
+    "useAcrylicInTabRow": true
+}
