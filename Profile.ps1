@@ -45,7 +45,7 @@ function prompt {
 }
 
 # Basic editing functions
-Set-PSReadLineKeyHandler -Chord Ctrl+Alt+Backspace -Function BackwardKillWord
+Set-PSReadLineKeyHandler -Chord Ctrl+w -Function BackwardKillWord
 Set-PSReadLineKeyHandler -Chord Ctrl+u -Function BackwardDeleteLine
 Set-PSReadLineKeyHandler -Chord Alt+Backspace -Function BackwardDeleteLine
 Set-PSReadlineKeyHandler -Chord Ctrl+d -Function DeleteCharOrExit
